@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/myStyle.css">
+		<script type="text/javascript" src="jquery/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>		
+		<title>inscription</title>
+	</head>
+
+
+	<body>
+
+	<div class="container-fluid">
+				
+				<header>
+					<nav class="navbar navbar-inverted">
+
+						<div class="navbar-header">
+							<a href="index.html" class="navbar-brand logo">vendci.</a>
+						</div>
+						
+					</nav>
+				</header>
+
+				<section>
+
+					<div class="container" id="insc">
+					  <h2 class="heading">Insription</h2>
+					 
+					  <form class="form-row" action="" id="form_inscription">
+
+					  	<div class="form-group  col-sm-6">
+					      <label for="#nom">Nom:</label>
+					      <input type="text" class="form-control" id="nom" placeholder="Entrez votre Nom" name="nom">
+					      
+					      <div id="erreur-nom"></div>
+					    </div>
+
+					 
+					    <div class="form-group  col-sm-6">
+					      <label for="#prenom">Prenom:</label>
+					      <input type="text" class="form-control " id="prenom" placeholder="Entrez votre Prenom" name="prenom">
+					      
+					      <div id="erreur-prenom"></div>
+					    </div>
+
+					    
+
+					    <div class="form-group  col-sm-12">
+					      <label for="#email">Email:</label>
+					      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+					      
+					      <div id="erreur-mail"></div>
+					    </div>
+
+					    <div class="form-group  col-sm-6">
+					      <label for="#pwd">Password:</label>
+					      <input type="password" class="form-control" id="pwd" placeholder="Entrez votre mot de passe" name="pwd">
+					    </div>
+
+					    <div class="form-group  col-sm-6">
+					      <label for="#pwd_conf">Confirmation</label>
+					      <input type="password" class="form-control" id="pwd_conf" placeholder="Entrez à nouveau votre mot de passe" name="pwd_conf">
+					    </div>
+					    <div id="erreur-pwd" class="col-sm-12 "></div>
+
+				      	<div class=" col-sm-4">
+							<label for="#select">Profile</label>
+						  	<select class="form-control" id="select" name="selection">
+								<option class="selected">...</option>
+						      	<option>Cultivateur</option>
+						      	<option>Revendeur</option>
+						      	<option>Client</option>
+							</select>
+							<div id="erreur-profile"></div>				
+						</div>	
+
+						<div class="form-group  col-sm-7">
+					      <label for="#tel">Telephone</label>
+					      <input type="text" class="form-control" id="tel" placeholder="Entrez votre Telephone" name="tel">
+					      <div id="erreur-tel"></div>
+					    </div>
+					    
+
+					    <div class="form-group col-sm-12 ">
+
+					    	<div class="checkbox">
+						      <label><input type="radio" name="sexe" id="homme" value="homme"> homme</label>
+						    </div>
+
+						    <div class="checkbox">
+						      <label><input type="radio" name="sexe" id="femme" value="femme"> femme</label>
+						    </div>
+						    
+						    <div id="erreur-sexe"></div>
+					    </div>
+					 
+					    <button type="submit" id="submit" class="btn btn-default"  value="s'inscrire"> s'inscrire </button> 
+					    
+					    <div id="erreur" class="col-sm-12"></div>
+					  </form>
+					</div>
+
+				</section>
+
+			</div>
+
+			<script type="text/javascript" src="js/myJs.js"></script>
+
+	</body>
+</html>

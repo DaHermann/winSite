@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/myStyle.css">
+		<script type="text/javascript" src="jquery/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<title>connection</title>
+	</head>
+
+
+	<body>
+
+		<div class="container-fluid">
+					
+			<header>
+				<nav class="navbar navbar-inverted">
+
+					<div class="navbar-header">
+						<a href="index.html" class="navbar-brand logo">vendci.</a>
+					</div>
+					
+				</nav>
+			</header>
+
+			<section>
+
+				<div class="container" id="conn">
+				  	<h2 class="heading">Connexion</h2>
+				 
+				  	<form class="form-row" id="form_conn" action="/action_page.php">
+					    <div class="form-group  col-sm-12">
+					      <label for="email">Email:</label>
+					      <input type="email" class="form-control" id="email_conn" placeholder="Entrez votre email" name="email_conn">
+					      <div id="email_error"></div>
+					    </div>
+
+					    <div class="form-group col-sm-12">
+					      <label for="#pwd_conn">Password:</label>
+					      <input type="password" class="form-control" id="pwd_conn" placeholder="Entrez vote mot de passe" name="pwd_conn">
+					      <div id="pwd_error"></div>
+					    </div>
+
+
+					    <button type="submit" id="submit" class="btn btn-default"  value="s'inscrire"> s'inscrire </button> 
+					</form>
+
+					<div id="error"></div>
+				</div>
+
+			</section>
+
+		</div>
+		<script type="text/javascript" src="js/connexion.js"></script>
+
+	</body>
+</html>
